@@ -59,7 +59,7 @@ This section contains instructions on how to use the Horiseon homepage.
 
 1. Navigation bar: 
 
-The navigation bar contains three clickable menu options including: Search Engine Optimisation, Online Reputation and Social Media Marketing. Please note that since this is just the homepage, clicking the menu options will not redirect you to a new page. 
+The navigation bar contains three clickable menu options including: Search Engine Optimisation, Online Reputation and Social Media Marketing. Please note that since this is just the homepage, clicking the menu options will not redirect you to a new page (unresponsive). 
 
 ![Navigation Bar Image](./assets/images/navigation-bar.png)
 

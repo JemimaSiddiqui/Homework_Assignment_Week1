@@ -1,13 +1,40 @@
+/*Note: This CSS file has been edited to follow semantic structure. 
+It has also been modified to include detailed comments.*/
+
+/*UNIVERSAL CLASSES*/
+
+/*Universal selector element to select all the elements in the HTML page. 
+In this element a border is added to all boxes with no padding and margin. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/*Body element sets the background colour of the homepage to the colour specified.*/
 body {
     background-color: #d9dcd6;
 }
 
+/*This class sets the colour of the navigation bar menu text to white. The text-decoration
+allows us to remove the underline from the navigation bar menu text.*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*This class sets the font size of the blurb text in the card on the right side of the screen to 
+16px. (Card that contains lead generation, brand awareness and cost management).*/
+p {
+    font-size: 16px;
+}
+
+
+/*CLASSES FOR HEADER*/
+
+/*This class is used to set the font type, the background colour of the header, 
+the font colour of the text in the header and the space between the text. Padding 
+is set to 20px to increase the height of the header.*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +42,22 @@ body {
     color: #ffffff;
 }
 
+/*In this class, the heading "Horiseon" is set to 48px and in-line to other texts in the 
+navigation bar.*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/*In this class, the "seo"" in the heading "Horiseon" is set to the colour specified below.*/
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/*In this class, the menu text in the header is set to a specified colour, font type and font size.
+The padding on the top allows the text to be in center (vertically) of the header. Margin right adds
+space between the text and right side of the homepage, and float sets the text to be aligned to the 
+right of the homepage.*/
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,24 +66,24 @@ body {
     font-size: 20px;
 }
 
+/*This class allows us to ensure that no marker is shown in the navigation bar menu text list.*/
 .header div ul {
     list-style-type: none;
 }
 
+/*This class allows us to place the menu text list in the navigation bar in-line and with a 25px
+space between the text.*/
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
+/*CLASS FOR HOMEPAGE IMAGE*/
 
-p {
-    font-size: 16px;
-}
-
+/*This class sets the height of the homepage image to 800px with a width that covers 100% of the 
+homepage screen. A 25px margin is added to the bottom of the image. The background_size and 
+background_position have been set such that the image fits the screen and is centered in its allocated
+space.*/
 .hero {
     height: 800px;
     width: 100%;
@@ -59,81 +93,35 @@ p {
     background-position: center;
 }
 
+/*CLASSES FOR CONTENT SECTION*/
+
+/*In this class, we ensure that the image is left of the text with a 25px gap between the image and the 
+text. (Card that contains search engine optimisation, online reputation and social media marketing).*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/*In this class, we ensure that the image is right of the text with a 25px gap between the image and the 
+text. (Card that contains search engine optimisation, online reputation and social media marketing).*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/*In this class we set the card with search engine optimisation, online reputation and social media marketing.
+to take up 75% of the width of the entire homepage with a 20px margin gap from the left end of the hompage. 
+The two card sections (on left and right) are also set to be inline with each other.*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
+/*In this class we set each card to the colour blue, and the text within these cards 
+are set to white with a specific font type. The space between the cards is set to be 
+20px, and the text and image are centered in each card by setting padding to 50px.
+The height of each card is set to 300px to fit the image and text.*/ 
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -161,18 +149,9 @@ p {
     color: #ffffff;
 }
 
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
+/*In the following classes, the search engine optimisation, online reputation managment 
+and media marketing headings are set to have a margin of 20px below them with a font 
+size of 36px.*/
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -188,6 +167,98 @@ p {
     font-size: 36px;
 }
 
+/*In the following classes, the search engine optimisation, online reputation managment 
+and media marketing images are set to have a maximum height of 200px.*/
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+/*CLASSES FOR BENEFITS SECTION*/
+
+/*This class creates the card on the right side of the homepage containing the following 
+headings: lead generation, brand awareness and cost management. It sets the margin on the right
+of the card to 20px with a padding of 20px. The width and height of the card has been specified 
+to 20% and 100% respectively. The font type for the card text has been set and background 
+colour is set to be blue.*/
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/*In the following classes, the colour of the lead generation, brand awareness and cost 
+management headings and associated text are set to the specified colour. Each 'subheading section' 
+is set to have a 32px margin below it to add space between the sections.*/
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/*In the following classes, the margin beneath the icon headings in the homepage 
+is set to 10px. The headings are also centered in the card.*/ 
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*In the following classes, the icon images are set to be displayed as blocks i.e.
+one below the other. The margin between each section in the card is set to 10px, and 
+maximum width of the image is set to 150px.*/ 
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*CLASSES FOR FOOTER*/
+
+/*.footer class sets the font type of the footer text, centers the text with a 
+30px space between the text.*/
 .footer {
     padding: 30px;
     clear: both;
@@ -195,6 +266,7 @@ p {
     text-align: center;
 }
 
+/*This class sets the footer font size to 20px.*/
 .footer h2 {
     font-size: 20px;
 }
